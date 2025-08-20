@@ -12,24 +12,28 @@ type Memory = {
   note: string
 }
 
-// update these to your real files in public/memories
+
 const memories: Memory[] = [
-  { id: "m1",  type: "image", src: "/memories/dp-whatsapp-2.jpeg", title: "Indian DP",    date: "Aug 19, 2025", note: "That effortless smile that makes chats feel warmer." },
-  { id: "m2",  type: "image", src: "/memories/dp-whatsapp.jpeg",   title: "Foreign DP",   date: "Aug 19, 2025", note: "The smile that makes you wait for replies" },
+  { id: "m1",  type: "image", src: "/memories/DP-whatsapp-2.jpeg", title: "Indian DP",    date: "Aug 19, 2025", note: "That effortless smile that makes chats feel warmer." },
+  { id: "m2",  type: "image", src: "/memories/DP-whatsapp.jpeg",   title: "Foreign DP",   date: "Aug 19, 2025", note: "The smile that makes you wait for replies" },
   { id: "m3",  type: "image", src: "/memories/Link-DP.jpeg",       title: "Proffesional DP", date: "Aug 19, 2025", note: "The one which brings money home" },
-  { id: "m4",  type: "image", src: "/memories/pout.jpg",           title: "Pout Queen",   date: "May 17, 2025", note: "Playful mood, perfect timing, endless sunshine" },
-  { id: "m5",  type: "image", src: "/memories/quesera-pout.jpg",   title: "Hungry AF",    date: "May 10, 2025", note: "Midnight hunger but still posing." },
-  { id: "m6",  type: "image", src: "/memories/quesera.jpg",        title: "Quesera Pout", date: "May 10, 2025", note: "Hungry evenings, warm company, sexy lips" },
-  { id: "m7",  type: "image", src: "/memories/quties.jpg",         title: "Cuties Pout",  date: "Aug 07, 2025", note: "One photo, a thousand memories made." },
-  { id: "m8",  type: "image", src: "/memories/sketch.jpg",         title: "Beauty",       date: "Jul 31, 2025", note: "A photo which got captured by a pencil." },
-  { id: "m9",  type: "image", src: "/memories/us-all.jpg",         title: "Us all",       date: "May 23, 2025", note: "The squad, the chaos, the Park, the Radhe Radhe, the Get it?, the Finance illiteracy, the stranger." },
-  { id: "m10", type: "image", src: "/memories/us.jpg",             title: "So that's it", date: "Aug 07, 2025", note: "Just us — easy and real, it was the end." },
-  { id: "m11", type: "video", src: "/memories/11400 bill.mp4",     title: "11400 bill",   date: "Aug 19, 2025", note: "That dinner we’ll never forget — thanks to the bill." },
-  { id: "m12", type: "video", src: "/memories/bowling.mp4",        title: "Bowling",      date: "Aug 19, 2025", note: "Strikes, misses, and laughter in between." },
-  { id: "m13", type: "video", src: "/memories/juta-chori.mp4",     title: "Juta chori",   date: "Aug 19, 2025", note: "Projit needs to visit a therapisit" },
-  { id: "m14", type: "video", src: "/memories/more-shots.mp4",     title: "Shots",        date: "Aug 19, 2025", note: "One more? Always one more." },
-  { id: "m15", type: "video", src: "/memories/shots.mp4",          title: "More Shots",   date: "Aug 19, 2025", note: "Hum sab bevede hai!" },
+  { id: "m4",  type: "image", src: "/memories/Pout.jpg",           title: "Pout Queen",   date: "May 17, 2025", note: "Playful mood, perfect timing, endless sunshine" },
+  { id: "m5",  type: "image", src: "/memories/Quesera-pout.jpg",   title: "Hungry AF",    date: "May 10, 2025", note: "Midnight hunger but still posing." },
+  { id: "m6",  type: "image", src: "/memories/Quesera.jpg",        title: "Quesera Pout", date: "May 10, 2025", note: "Hungry evenings, warm company, sexy lips" },
+  { id: "m7",  type: "image", src: "/memories/Quties.jpg",         title: "Cuties Pout",  date: "Aug 07, 2025", note: "One photo, a thousand memories made." },
+  { id: "m8",  type: "image", src: "/memories/Sketch.jpg",         title: "Beauty",       date: "Jul 31, 2025", note: "A photo which got captured by a pencil." },
+  { id: "m9",  type: "image", src: "/memories/Us-all.jpg",         title: "Us all",       date: "May 23, 2025", note: "The squad, the chaos, the Park, the Radhe Radhe, the Get it?, the Finance illiteracy, the stranger." },
+  { id: "m10", type: "image", src: "/memories/Us.jpg",             title: "So that's it", date: "Aug 07, 2025", note: "Just us — easy and real, it was the end." },
+  { id: "m11", type: "video", src: "/memories/11400-bill.mp4",   title: "11400 bill",   date: "Aug 19, 2025", note: "That dinner we’ll never forget — thanks to the bill." },
+  { id: "m12", type: "video", src: "/memories/Bowling.mp4",        title: "Bowling",      date: "Aug 19, 2025", note: "Strikes, misses, and laughter in between." },
+  { id: "m13", type: "video", src: "/memories/Juta-chori.mp4",     title: "Juta chori",   date: "Aug 19, 2025", note: "Projit needs to visit a therapisit" },
+  { id: "m14", type: "video", src: "/memories/More-shots.mp4",     title: "Shots",        date: "Aug 19, 2025", note: "One more? Always one more." },
+  { id: "m15", type: "video", src: "/memories/Shots.mp4",          title: "More Shots",   date: "Aug 19, 2025", note: "Hum sab bevede hai!" },
 ]
+
+
+
+
 
 export default function MemoriesPage() {
   const [opened, setOpened] = useState(false)
@@ -249,7 +253,6 @@ function ScrapBook({
                       className="w-auto h-auto max-h-[56vh] object-contain rounded-md"
                       autoPlay
                       loop
-                      muted
                       controls
                       playsInline
                     />
